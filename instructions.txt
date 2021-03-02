@@ -1,0 +1,9 @@
+Create a google homepage clone
+Steps:
+    1) put main elements on the page, the logo image and search form
+    2) place them horizontally
+    3) do the navbar across the top
+        + build content first then try to position it
+    4) add the footer, similar to top navbar
+    5) do as much as you can before relying on the dev tools or viewing the page's source code
+    6) push project to github
