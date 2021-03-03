@@ -3,50 +3,100 @@
 <html lang="en">
   
 <head>
-  <meta charset="UTF-8" content="width=device-width, initial-scale=1">
-  <title>Google Homepage</title>
-  <link rel="sylesheet" type="text/css" href="style.css" />
-</head>
-
+<meta charset="UTF-8" content="width=device-width, initial-scale=1">
+<title>Google Homepage</title>
+<link rel="sylesheet" type="text/css" href="style.css" />
 <style>
-  img {
+  a {
+      color: inherit;
+      text-decoration: none;
+      word-spacing: 50px;
+      font-family: arial, sans-serif;
+   }
+
+   a:hover {
+     color: inherit;
+     text-decoration: underline;
+     cursor: pointer;
+   }
+
+  #logo {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 25%;
+  }
+
+  .centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #searchbar {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+
+  .inputbar {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px
+  }
+
+  #footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #70757a;
+    word-spacing: 10px;
+    font-size: 14px;
+    font: sans-serif;
   }
 </style>
-<body>
-  <!--Header Nav-->
-  <header>
-    <nav>
-      <div style="overflow: hidden;">
-        <div style="float:left">
-          <ul>
-            <a href="#about">About</a>
-            <a href="#store">Store</a>
-          </ul>
-        </div>
-        <div style="float:right">
-          <ul>
-            <a href="#gmail">Gmail</a>
-            <a href="#images">Images</a>
-            <button type="submit">Sign In</button>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!--Google Logo-->
-  <img src="googlelogo.png" alt="google logo">
-  <!--Search Box-->
-  <form> <input type="text"></form>
-  <!--Links Underneath-->
-  <button type="submit">Google Search</button>
-  <button type="submit">I'm Feeling Lucky</button>
-  <!--Footer-->
-  <footer>
+
+<header>
+  <nav>
     <div>
+      <div style="overflow: hidden;">
+      <div style="float:left">
+      <ul>
+        <a href="#about">About</a>
+        <a href="#store">Store</a>
+      </ul>
+    </div>
+    <div style="float:right">
+        <ul id="links">
+          <a href="#gmail">Gmail</a>
+          <a href="#images">Images</a>
+          <button type="submit">Sign In</button>
+        </ul>
+      </div>
+  </div>
+    </nav>
+</header>
+
+<body></body> 
+  <div class=centered>
+    <div>
+      <img src="googlelogo.png" alt="google logo">
+    </div>
+
+    <div id="searchbar">
+      <form> <input class="inputbar" type="text"></form>
+      <button type="submit">Google Search</button>
+      <button type="submit">I'm Feeling Lucky</button>
+    </div>
+  </div>
+
+  <footer>
+    <div id="footer">
       <div style="overflow: hidden;">
         <div style="float:left">
           <ul>
